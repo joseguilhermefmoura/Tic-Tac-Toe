@@ -108,7 +108,6 @@ void welcome_messages(){ // Initialize some messages explaining to the user how 
 	cout << NL << NL;
 	cout << TAB << "Welcome to Tic-tac Toe! -- Developed by _github>@joseguilhermefmoura" << endl;
 	cout << NL << NL << TAB;
-	Sleep(3000);
 	// Second message **********
 	changeColor(15);
 	cout << "This game follows the Tic-tac Toe field pattern shown below:" << endl;
@@ -177,7 +176,6 @@ void welcome_messages(){ // Initialize some messages explaining to the user how 
 	}
 	changeColor(15);
 	cout << NL << NL << TAB;
-	Sleep(5500);
 
 	// Third message
 	changeColor(10);
@@ -411,7 +409,7 @@ void score(){
 	changeColor(15);
 	cout << NL << NL << NL;
 	changeColor(14);
-	cout << TAB << "Press ENTER to play again or ESC to close the game!" << endl;
+	cout << TAB << "Press ENTER to play again or ESC to close the game! ";
 	
 	while(closeGameLoop){
 		switch(getch()){
